@@ -1,0 +1,93 @@
+body{
+    background-image: linear-gradient(to right,rgb(72, 96, 235),  rgb(54, 25, 219));
+    
+}
+nav#menu {
+    display: block;
+}
+
+nav#menu ul{
+position: absolute;
+text-transform: uppercase;
+top: -20px;
+right: 100px;
+
+}
+nav#menu li{
+    display: inline-block;
+    background-color:grey;
+    padding: 10px;
+    margin: 2px;
+}
+header{
+    width: 100%;
+    height: 100%;
+}
+
+/*Manipulando as divs*/
+.tipopranchas{
+    
+    padding: 10px;
+    margin: auto;
+    margin-right: 5px;
+    background-color:rgb(148, 161, 235);
+    position: absolute;
+    bottom: -220px;
+    
+}
+
+div#dicas{
+    padding: 10px;
+    margin: auto;
+    margin-right: 5px;
+    background-color:rgb(148, 161, 235);
+    position: absolute;
+
+}
+/* espaço para manipular imagens e animação*/
+
+figure#surfistainiciant img{
+  float:left;
+ margin-left:-25px;
+  border: 20px;
+  
+}
+
+figure.surfista img{
+    
+    animation: go-back 1s infinite alternate;
+}
+
+@keyframes go-back {
+    from {
+      transform: translateX(600px);
+    }
+    to {
+      transform: translateX(200px);
+    }
+  }
+/*manipulando h1 e h2 e p*/
+
+.tipopranchass{
+    text-indent:50px;
+    text-align: justify;
+    margin-left:5px ;
+
+}
+.surfinici{
+    text-indent:50px;
+    text-align: justify;
+    margin-left:5px ;
+   
+}
+h1{
+    text-indent: 50px;
+    color:black;
+  
+}
+h2{
+   
+        text-indent: 50px;
+        color: black;
+    
+}
