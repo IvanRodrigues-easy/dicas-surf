@@ -1,58 +1,213 @@
-body{
-    background-image: linear-gradient(to right,rgb(72, 96, 235),  rgb(54, 25, 219));
+@font-face {
+    font-family: 'Fonte-logo';
+    src: url(../fonts/IndieFlower-Regular.ttf);
+}
+
+.fonte-logo{
+    font-family: 'Fonte-logo';
+    font-size: 20pt;
+    margin-top: 0px;
+    font-weight: bolder;
+}
+body#body-detras{
+   background-color:#ffffff;
+   
     
+}
+a{
+    text-decoration: none;
+        color:#606060;
+        font-weight: bolder;
+}
+a:hover{
+    text-decoration: underline;
+}
+table#tabelaspec{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+table#tabelaspec td{
+    border:1px solid black;
+    padding:5px;
+    text-align: center;
+
+}
+
+div#interface{
+    width: 900px;
+    position: relative;
+    padding: 13px;
+    margin: -20px auto 20px auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.904);
+    background-color: rgba(173,216,230);
+ }
+/*SECTION ,ASIDE , FOOTER*/
+  section#corpo{
+     width: 499px;
+     display:block;
+     float: left;
+   border-right: 1px solid #000000;
+ }
+ aside#lateral1{
+     width: 400px;
+     display: block;
+     float: right;
+ }
+ footer#rodape{
+     clear: both;
+     border-top: 1px solid #000000;
+     text-align: center;
+ }
+/*Lugar pra manipular o menu*/
+
+nav#menu a:hover{
+    color: white;
+}
+
+nav#menu li:hover{
+    background-color: rgb(54, 25, 219);
 }
 nav#menu {
     display: block;
+   
 }
 
 nav#menu ul{
 position: absolute;
 text-transform: uppercase;
-top: -20px;
-right: 100px;
 
+right: 100px;
+margin: -180px;
+
+}
+nav#menu a{
+    text-decoration: none;
+    color: black;
 }
 nav#menu li{
     display: inline-block;
-    background-color:grey;
+    background-color:rgb(104, 185, 240);
     padding: 10px;
     margin: 2px;
+    transition: background-color 1s;
+  
 }
+
 header{
     width: 100%;
     height: 100%;
 }
 
-/*Manipulando as divs*/
-.tipopranchas{
-    
-    padding: 10px;
-    margin: auto;
-    margin-right: 5px;
-    background-color:rgb(148, 161, 235);
-    position: absolute;
-    bottom: -220px;
-    
+
+
+/*Manipulação de imagens*/
+figure#gifsurf img{
+height: 15%;
+width: 15%;
+float: left;
+margin: -20px;
+}
+figure#luiza img{
+    height: 100%;
+    width: 100%;
+}
+figure#luiza{
+    position: relative;
+    border: 4px solid rgba(51, 52, 56, 0.247);
+    box-shadow: 1px 1px 4px blanchedalmond;
 }
 
-div#dicas{
-    padding: 10px;
-    margin: auto;
-    margin-right: 5px;
-    background-color:rgb(148, 161, 235);
-    position: absolute;
-
+figure#luiza figcaption{
+ position: absolute;
+ top: 0px;
+ opacity: 0;
+ transition: opacity 2000ms;
+ background-color: rgba(0,0,0,0.5);
+ width: 100%;
+ height: 100%;
+ text-indent: 50px;
+box-sizing: border-box;
+padding: 15px;
+color: white;
+font-size: 20pt;
 }
-/* espaço para manipular imagens e animação*/
+figure#luiza:hover figcaption{
+    opacity: 1;
+}
 
-figure#surfistainiciant img{
-  float:left;
- margin-left:-25px;
-  border: 20px;
+figure#tipos-pranchas img{
+    width: 100%;
+    height: 100%;
+}
+
+figure#tipos-pranchas{
+    position: relative;
+    border: 4px solid rgba(51, 52, 56, 0.247);
+    box-shadow:1px 1px 4px blanchedalmond;
+}
+
+figure#tipos-pranchas figcaption{
+    position: absolute;
+    top: 0px;
+    background-color:  rgba(0,0,0,0.5);
+    width: 100%;
+    height: 100%;
+    color: white;
+    text-indent: 20px;
+    padding: 15px;
+    font-size: 20pt;
+    box-sizing: border-box;
+    opacity: 0;
+    transition: opacity 2000ms;
+}
+figure#tipos-pranchas:hover figcaption{
+    opacity: 1;
+}
+
+/*Tabela GUI VOLUME*/
+table#guia-volume{
+    width: 100;
+    
+    background-color: #ffffff;
+}
+table#guia-volume tr td{
+    text-align: center;
+}
+table#guia-volume tr th{
+ padding: 3px;
+ text-align: center;
+    background-color: #66a3ff;
+}
+   
+table#guia-volume thead#idniveis tr  th.pessoa{
   
+    padding: 5px 10px 5px; ;
+    background-color: rgba(38, 58, 235, 0.795); 
+    
+}
+table#guia-volume thead#idniveis tr  th.iniciante{
+    position: relative;
+    padding: 5px 10px 5px; ;
+    background-color: rgba(38, 58, 235, 0.795); 
+    
 }
 
+
+table#guia-volume thead#idniveis tr  th.intermediario{
+    position: relative;
+    padding: 5px 10px 5px; 
+    background-color: rgba(38, 58, 235, 0.795); 
+    
+}
+table#guia-volume thead#idniveis tr  th.profissional{
+    position: relative;
+    padding: 5px 10px 5px; 
+    background-color: rgba(38, 58, 235, 0.795); 
+    
+}
+
+
+/* espaço para  animação*/
 figure.surfista img{
     
     animation: go-back 1s infinite alternate;
@@ -60,34 +215,22 @@ figure.surfista img{
 
 @keyframes go-back {
     from {
-      transform: translateX(600px);
+      transform: translateX(480px);
     }
     to {
       transform: translateX(200px);
     }
   }
 /*manipulando h1 e h2 e p*/
-
-.tipopranchass{
-    text-indent:50px;
-    text-align: justify;
-    margin-left:5px ;
-
-}
-.surfinici{
-    text-indent:50px;
-    text-align: justify;
-    margin-left:5px ;
-   
-}
 h1{
-    text-indent: 50px;
-    color:black;
-  
+    padding: 10px;
+    text-indent: 20px;
+    margin-bottom: 0px;
 }
-h2{
-   
-        text-indent: 50px;
-        color: black;
+p{
+    font-size: 14pt;
     
+    text-indent: 15px;
+    margin:10px;
 }
+
