@@ -1,0 +1,25 @@
+@charset "UFT-8";
+section#conteudo{
+    width: 1000px;
+    margin: auto;
+}
+img#prancha-mapa{
+   
+  
+   margin-left: 100px;
+   
+}
+
+ iframe#frame-prancha{
+    width: 415px;
+    height: 320px;
+    border: none;
+    overflow: hidden;
+    margin-left:120px;
+    margin-bottom: 81px;
+    
+   
+}
+ iframe#frame-spec::-webkit-scrollbar{
+    display: none;
+}
