@@ -1,0 +1,35 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'font-sobre';
+    src: url(../fonts/IndieFlower-Regular.ttf);
+}
+
+h1{
+    font-size: 40pt;
+    font-family: font-sobre;
+    
+}
+p{
+    font-size: 15pt;
+    text-justify: auto;
+}
+.criador  {
+width: 220px;
+height: auto;
+display: block;
+float: right;
+border-radius: 20px;
+margin-bottom: 20px;
+margin-top: right 50pc;
+padding: 10px;
+}
+figcaption{
+    display: block;
+    float: right;
+    text-align:right;
+    padding-top: 190px;
+    margin-top: -15px;
+    margin-right: -6cm;
+    padding-bottom: 10px;
+
+}
