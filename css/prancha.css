@@ -6,7 +6,7 @@ section#conteudo{
 img#prancha-mapa{
    
   
-   margin-left: 100px;
+   margin-left: 70px;
    
 }
 
@@ -19,7 +19,4 @@ img#prancha-mapa{
     margin-bottom: 81px;
     
    
-}
- iframe#frame-spec::-webkit-scrollbar{
-    display: none;
 }
