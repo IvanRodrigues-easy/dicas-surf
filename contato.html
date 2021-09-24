@@ -31,7 +31,57 @@
         </ul>
     </nav>
 
-<h3>Que tipo de prancha usar?</h3>
+<form method="POST" action="mailto:niltao007@gmail.com" id="fContato">
+ <fieldset id="usuario"><legend>Identificação do Usuário</legend>
+    <p><label for="cNome">Nome:</label><input name="tNome" id="cNome" type="text" size="20"maxlength="30" placeholder="Nome Completo"></p>
+    <p><label for="cSenha">Senha:</label><input type="password" name="tSenha" id="cSenha" size="8" maxlength="8" placeholder="8 dígitos"></p>
+    <p> <label for="">E-mail:</label><input type="email"name="tEmail" id="cEmail" maxlength="40" size="20" placeholder="Seu e-mail"/></p>
+ 
+    <fieldset><legend>Sexo:</legend>
+    <input type="radio" name="tMasc" id="cMasc"checked><label for="cMasc">Masculino</label> <br/>
+    <input type="radio" name="tMasc" id="cFem"><label for="cFem">Feminino</label>
+    
+</fieldset>
+<p><label for="cDate">Data de Nascimento:<input type="date" name="tDate" id="cDate"  /></label></p>
+    </fieldset>
+
+    <fieldset><legend>Endereço do Usuário</legend>
+    <p><label for="cRua">Logradouro:</label><input type="text" name="tRua" id="cRua" placeholder="Rua,av,trav.." size="20" maxlength="30"/></p>
+    <p><label for="cNum">Número:</label> <input type="number" name="cNum" id="cNum"></p>
+    <p><label for="cEstd">Estado:</label><select name="tEstad" id="cEstad">
+                <optgroup label="RJ região sudeste">
+                    <option value=""></option>    
+                    <option value="arpex">Arpoador</option>
+                        <option value="copa">Copacabana</option>
+                        <option value="Itacoa">Itacatioara</option>
+                        <option value="Recr">Recreio</option>
+                </optgroup>
+        
+                <optgroup label="SP região sudeste">
+                    <option value="Maresia">Maresias</option>
+                    <option value="pauba">Pauba</option>
+                </optgroup>
+
+
+            </select>
+            <p><label for="cCid">Cidade</label><input type="text" name="tCid" id="cCid" placeholder="sua cidade" size="20" 
+                maxlength="30" list="cidades" /></p>
+                <datalist id="cidades">
+                    <option value="Rio Janeiro"></option>
+                    <option value="Saquarema"></option>
+                    <option value="Niteroi"></option>
+                    <option value="Barra da Tijuca"></option>
+                    <option value="São sebastião"></option>
+
+                </datalist>
+    </p>
+</fieldset>
+    
+
+
+
+
+</form>
 
 
 
