@@ -17,6 +17,25 @@ article h2 {
     border-radius: 5px;
 
 }
+h3#faleconosco{
+    position: absolute;
+    font-size: 14px ;
+    left:71pc;
+    float: right;
+ top:120px ;
+    
+}
+
+figure#contato img {
+     position:absolute;
+     height: 12%;
+     left:72pc;
+     width: auto;
+     bottom: 33pc;
+     float: right;
+     
+     }
+     
 article h1{
     text-indent: 15px;
     font-size: 15pt;
