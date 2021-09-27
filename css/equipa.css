@@ -1,0 +1,28 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'fonte-p';
+    src: url(../fonts/Padauk-Regular.ttf);
+}
+@font-face {
+    font-family: 'dicas-iniciante1';
+    src: url(../fonts/RockSalt-Regular.ttf);
+}
+
+figure#contato img{
+ position:absolute;
+height: 13%;
+left: 30cm;
+bottom: 14cm;
+width: 10%;
+float: right;
+
+}
+
+h3#faleconosco{
+    position: absolute;
+    float: right;
+    left: 31cm;
+    bottom: 13cm;
+    
+}
+ 
